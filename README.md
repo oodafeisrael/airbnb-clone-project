@@ -41,3 +41,8 @@ CI/CD Pipeline Integration:
 Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
 
 This structured approach ensures learners not only build technical skills but also adopt a mindset geared toward problem-solving, scalability, and industry-grade project execution.
+Team Roles
+Backend Developer: Responsible for implementing API endpoints, database schemas, and business logic.
+Database Administrator: Manages database design, indexing, and optimizations.
+DevOps Engineer: Handles deployment, monitoring, and scaling of the backend services.
+QA Engineer: Ensures the backend functionalities are thoroughly tested and meet quality standards.
