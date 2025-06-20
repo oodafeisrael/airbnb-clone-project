@@ -117,6 +117,76 @@ Relationships:
 A review is written by a user
 A review is association with a property
 
+Feature Breakdown:
+Core features implemented in the AirBnB Clone backend and how each
+ one contributes to the functionality of the platform.
+
+*User Management: This feature handles 
+user registration, 
+login, 
+authentication, 
+and profile management.
+ It ensures that only verified users can access services, 
+and provides role-based capabilities for guests and hosts.
+
+*Property Management
+ Hosts can list properties with relevant details such as 
+location, 
+price, 
+amenities, 
+and availability. 
+This feature allows the platform to showcase accommodations that users 
+can browse and book.
+Endpoints: /properties/, /properties/{property_id}/
+Features: Create, update, retrieve, and delete property listings.
+
+*Booking System
+Enables users (guests) to make reservations for listed properties by 
+selecting available dates. It also allows hosts to manage bookings, 
+while maintaining accurate availability tracking.
+Endpoints: /bookings/, /bookings/{booking_id}/
+Features: Make, update, and manage bookings, including check-in and check-out details.
+
+*Payment Processing
+This feature handles the financial transactions involved in booking a property.
+It ensures that users can securely pay for reservations and that hosts receive 
+payment records.
+Endpoints: /payments/
+Features: Handle payment transactions related to bookings.
+
+*Review System
+Allows users to leave feedback and rate properties after their stay. 
+This contributes to trust and transparency on the platform, 
+helping future guests make informed choices.
+Endpoints: /reviews/, /reviews/{review_id}/
+Features: Post and manage reviews for properties.
+
+*Authentication & Authorization
+Implements secure login sessions and protects sensitive routes and data. 
+This ensures only authenticated users can access protected endpoints 
+and perform authorized actions.
+Endpoints: /users/, /users/{user_id}/
+Features: Register new users, authenticate, and manage user profiles.
+
+*API Documentation
+The backend API is documented using the OpenAPI specification and 
+provides RESTful and GraphQL endpoints. This helps frontend developers 
+and third-party integrators understand and use the system effectively.
+API Documentation
+OpenAPI Standard: The backend APIs are documented using the OpenAPI 
+standard to ensure clarity and ease of integration.
+Django REST Framework: Provides a comprehensive RESTful API for handling 
+CRUD operations on user and property data.
+GraphQL: Offers a flexible and efficient query mechanism for interacting 
+with the backend.
+
+*Data Optimization
+Includes database indexing and caching strategies to improve performance 
+and reduce latency. This is essential for scaling the application and 
+ensuring fast response times.
+Indexing: Implement indexes for fast retrieval of frequently accessed data.
+Caching: Use caching strategies to reduce database load and improve performance.
+
 
 
 
