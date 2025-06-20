@@ -187,6 +187,51 @@ ensuring fast response times.
 Indexing: Implement indexes for fast retrieval of frequently accessed data.
 Caching: Use caching strategies to reduce database load and improve performance.
 
+API Security Overview
+Implement and document key security measures to safeguard application data and ensure secure transactions.
+Authentication
+The system uses secure authentication mechanisms (such as token-based authentication or JWT) to verify the 
+identity of users. This prevents unauthorized access and ensures that only verified users can perform 
+actions like booking properties or updating listings.
+why? 
+Authorization prevents misuse of features and ensures users only perform actions they’re permitted to, 
+safeguarding business logic and data integrity.
+
+Rate Limiting
+Rate limiting is applied to prevent abuse of API endpoints by restricting how many requests a user or 
+IP address can make in a given time window.
+why?
+Protects the system against brute-force attacks, denial-of-service (DoS), and spamming of resources 
+(e.g., login attempts or form submissions).
+
+Data Encryption
+All data in transit is encrypted using HTTPS (SSL/TLS). Passwords are securely hashed before storage 
+using algorithms like bcrypt.
+why?
+Encryption ensures that sensitive information like passwords, personal data, and payment details are 
+protected from interception or theft.
+
+Input Validation & Sanitization
+All user inputs are validated and sanitized to protect against injection attacks (e.g., SQL injection, XSS).
+why?
+Prevents attackers from injecting malicious scripts or queries that can compromise the database or client 
+browsers.
+
+Payment Security
+Integration with secure, PCI-compliant payment gateways ensures all transactions are handled safely. 
+Sensitive payment data is not stored on the backend server.
+why?
+Secures financial data, reduces liability, and builds user trust by ensuring safe and legitimate 
+transactions.
+
+All these ensures that the backend is robust against common vulnerabilities and aligned with best 
+practices for securing modern web applications.
+
+
+
+
+
+
 
 
 
