@@ -55,3 +55,72 @@ Celery: For handling asynchronous tasks such as sending notifications or process
 Redis: Used for caching and session management.
 Docker: Containerization tool for consistent development and deployment environments.
 CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
+Database Design:
+The key entities in the AirBnB Clone backend system and how they relate to each other are as follows:
+Users - Represents both hosts and guests.
+Important Users fields:
+'id' (Primary Key)
+'name'
+'email' (unique)
+'Password_harsh'
+'role'
+Relationship:
+A User can rlate or lists 'multiple properties' - 1 : many
+A user can make 'Multiple bookings' - 1 : many
+A user can write 'multiple reviews' - 1 : many
+
+Properties - Represents property listings created by users who are hosts.
+important prperty fields:
+'id' (primary key)
+'title'
+'description'
+'location'
+'price_per_night'
+host_id (foreign key linked to users)
+Relationship:
+A property is owned by one host(user) - 1 : 1
+A property can have multiple bookings - 1 : many
+A property can have multiple reviews - 1 : many
+
+Bookings - Represents a reservation made by a guest.
+Important booking fields:
+'id' (primaary key)
+'user_id' (foreign key linked to Users)
+'property_id' (foreign key linked to properties)
+'start_date'
+'end_date'
+'status' (confirmed, cancelled, pending)
+Relationship:
+A booking is made by a user
+A booking is for a specific property
+a booking may be associated with a payment
+
+Payments - Represents the transaction details for a booking.
+important fields:
+'id' (primary key)
+'booking_id' (foreign key linked to bookings)
+'amount'
+'paymount_method'
+'status' (paid, failed)
+Relationships:
+A payment is linked to one booking
+
+Reviews - Represents feedback left by a user for a property.
+
+Important Fields:
+`id` (Primary Key)
+`user_id` (Foreign Key linked to Users)
+`property_id (foreign key linked to properties)
+rating (1 - 5)
+Relationships:
+A review is written by a user
+A review is association with a property
+
+
+
+
+
+
+
+
