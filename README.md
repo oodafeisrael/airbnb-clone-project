@@ -227,6 +227,33 @@ transactions.
 All these ensures that the backend is robust against common vulnerabilities and aligned with best 
 practices for securing modern web applications.
 
+CI/CD Pipeline:
+CI/CD means  Continuous Integration** and **Continuous Deployment/Delivery. It is a set of practices and 
+tools that automate the process of building, testing, and deploying code. With CI/CD pipelines, changes made to the codebase are automatically validated and pushed to production or staging environments after passing defined quality checks.
+
+Why It Matters for This Project
+
+For the AirBnB Clone project, implementing CI/CD pipelines ensures:
+- Consistent deployments** with fewer human errors
+- Faster development cycles**, allowing frequent updates and improvements
+- Automated testing**, which maintains code quality and catches bugs early
+- Reliable builds** that are always in a deployable state
+
+This enhances collaboration across the team, supports Agile development, and provides a professional 
+workflow similar to industry standards.
+
+Tools That Can Be Used
+
+- GitHub Actions : Automates testing, building, and deployment directly from GitHub.
+- Docker : Ensures that the application runs in consistent environments across 
+    development, testing, and production.
+- Docker Compose : Manages multi-container services for easier orchestration.
+- Heroku, AWS, Render, Railway : Are cloud platforms that can be used as deployment 
+  targets for the project.
+- PostgreSQL Service in CI : Adds a test database for running integration tests.
+  These tools will help to maintain maintain high quality, rapid iteration, and secure, 
+  automated deployments from development to production.
+
 
 
 
